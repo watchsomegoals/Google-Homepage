@@ -1,0 +1,51 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr;
+}
+.logo-image {
+    width: 60%;
+    height: auto;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+}
+form {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    column-gap: 0.4em;
+}
+#mySearch {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 50%;
+    width: 90%;
+    justify-self: center;
+    align-self: center;
+}
+#leftButton {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 61%;
+    height: 70%;
+    justify-self: end;
+}
+#rightButton {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 69%;
+    height: 70%;
+}

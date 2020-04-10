@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>Google</title>
-        <link rek="icon" href="images/favicon.png">
-
+        <link rel="icon" href="images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
         <header>
@@ -12,7 +12,14 @@
             </nav>
         </header>
         <main>
-            <img src="images/Google-Logo.jpg" alt="google logo">
+            <div class="container">
+                <img class="logo-image" src="images/Google-Logo.jpg" alt="google logo">
+                <form action="/google-search" method="GET">
+                    <input type="search" id="mySearch" name="q">
+                    <button type="submit" id="leftButton">Google Search</button>
+                    <button type="submit" id="rightButton">I'm Feeling Lucky</button>
+                </form>
+            </div>
         </main>
         <footer>
         </footer>
