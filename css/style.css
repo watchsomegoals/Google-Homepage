@@ -1,7 +1,27 @@
-.container {
+body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1.1fr;
+    margin: 0px;
+}
+header {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+main {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: lightgray;
 }
 .logo-image {
     width: 60%;
@@ -28,9 +48,15 @@ form {
     grid-row-start: 1;
     grid-row-end: 2;
     height: 50%;
-    width: 90%;
+    width: 100%;
     justify-self: center;
     align-self: center;
+    border-radius: 24px;
+    padding-left: 8%;
+    padding-right: 8%;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: thin;
 }
 #leftButton {
     grid-column-start: 1;
@@ -48,4 +74,20 @@ form {
     grid-row-end: 3;
     width: 69%;
     height: 70%;
+}
+button {
+    background-color: #eee;
+    border-radius: 4px;
+    border-color: transparent;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.dropImage {
+    width: 2%;
+}
+nav li {
+
 }
