@@ -7,13 +7,14 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
-        <header>
+    <div class="container">
+        <header class="navbar">
             <nav>
-                <ul>
-                    <li><a href="Gmail">Gmail</a></li>
-                    <li><a href="Images">Images</a></li>
-                    <li><a href="dropdown"><img class="dropImage" src="images/DropDown.png" alt="drop down menu"></a></li>
-                    <li><a href="signin"><button type="submit">Sign in</button></a></li>
+                <ul id="navbar">
+                    <li id="item4"><a href="signin"><button id="signinbtn" type="submit">Sign in</button></a></li>
+                    <li id="item3"><a href="dropdown"><img class="dropImage" src="images/DropDown.png" alt="drop down menu"></a></li>
+                    <li id="item2"><a href="Images">Images</a></li>
+                    <li id="item1"><a href="Gmail">Gmail</a></li>
                 </ul>  
             </nav>
         </header>
@@ -26,16 +27,25 @@
             </form>
         </main>
         <footer>
-            <ul>
-                <li>Austria</li>
-                <li><a href="Advertising">Advertising</a></li>
-                <li><a href="Business">Business</a></li>
-                <li><a href="About">About</a></li>
-                <li><a href="How Search works">How Search works</a></li>
-                <li><a href="Privacy">Privacy</a></li>
-                <li><a href="Terms">Terms</a></li>
-                <li><a href="Settings">Settings</a></li>
-            </ul>
+            <div class="wrapperPara">
+                <p>Austria</p>
+            </div>
+            <div class="wrapperLeft">
+                <ul id="leftfooter">
+                    <li><a href="Advertising">Advertising</a></li>
+                    <li><a href="Business">Business</a></li>
+                    <li><a href="About">About</a></li>
+                    <li><a href="How Search works">How Search works</a></li>
+                </ul>
+            </div>
+            <div class="wrapperRight">
+                <ul id="rightfooter">
+                    <li><a href="Privacy">Privacy</a></li>
+                    <li><a href="Terms">Terms</a></li>
+                    <li><a href="Settings">Settings</a></li>
+                </ul>
+            </div>
         </footer>
+    </div>
     </body>
 </html>
